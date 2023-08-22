@@ -3,10 +3,18 @@ package com.tcs.blogapp.comments;
 import com.tcs.blogapp.articles.ArticleEntity;
 import com.tcs.blogapp.users.UserEntity;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.util.Date;
 
 @Entity(name = "comments")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class CommentEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
